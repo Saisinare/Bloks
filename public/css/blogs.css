@@ -1,0 +1,69 @@
+body{
+    overflow-y: scroll;
+}
+nav{
+    top: 0;
+    width: 100%;
+    border-bottom: 0.1vh rgb(28, 14, 28);
+    color: rgb(0, 89, 255);
+}
+button#add{
+    position: fixed;
+    transition: all 0.3s ease-in-out ;
+    transform: translateX(180vh);
+    background-color: blueviolet;
+    border: none;
+    border-radius: 25vh;
+    height: 8vh;
+    width: 10vh;
+    margin-top: 75vh;
+    color: black;
+    font-size: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+#add:hover{
+    height: 9.1vh;
+    width: 10.1vh;
+}
+ img{
+    height: 3vh;
+}
+#main{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    padding: 2vh;
+}
+.blog{
+   height: 30vh;
+    width: 190vh;
+    background-color: rgb(9, 10, 10);
+    color: aliceblue;
+    border-radius: 1vh;
+    font-family: 'button';
+    cursor: pointer;
+    border-left: 1vh solid rgb(143, 2, 244);
+    border-right: 1vh solid rgb(143, 2, 244);
+
+}
+.blog:hover{
+    background-color: black;
+}
+h2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-family: 'button';
+    color: white;
+}
+.edit:hover , .delete:hover{
+    transition: all 0.5s ease-in-out;
+color: rgb(161, 160, 241);
+cursor: pointer;
+}
+

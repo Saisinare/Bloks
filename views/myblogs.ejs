@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block-Blogs</title>
+  </head>
+  <link rel="shortcut icon" href="img/blocklogo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/blogs.css" />
+  <link rel="stylesheet" href="css/myblogs.css" />
+  <script
+    src="https://kit.fontawesome.com/8ba3bf7a42.js"
+    crossorigin="anonymous"
+  ></script>
+  <style>
+    .addbtn {
+      height: 5vh;
+      width: 50vh;
+      border-radius: 2vh;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-family: "button";
+      background: linear-gradient(135deg, rgb(195, 0, 255), rgb(30, 0, 255));
+    }
+  </style>
+  <body>
+    <nav id="nav">
+      <div class="logo"><img src="img/logo.png" alt="" />Blocks</div>
+      <ul>
+        <li><a href="/" id="home">Home</a></li>
+        <li><a href="/blogs">Blogs</a></li>
+        <li class="this"><a href="/myblogs" id="contactus">My Blogs</a></li>
+      </ul>
+    </nav>
+    <button id="add"  onclick="showWritePad()">
+      <img src="img/add.png" alt="" />
+      <div id="add_text"></div>
+    </button>
+    <div class="writePad">
+      <div class="menu"><button onclick="closeWritePad()"><i class="fa fa-times"></i></button></div>
+      <div class="title"><input type="text" name="title" placeholder="Title" id="titleField"></div>
+      <div class="content"><textarea name="content" id="content" placeholder="Enter Content"></textarea></div>
+      <div class="submit"><button type="submit" onclick="addBlog()">Add Blog</button></div>
+    </div>
+    <div class="editPad">
+      <div class="menu"><button onclick="closeeditPad()"><i class="fa fa-times"></i></button></div>
+      <input type="text" id="_id" hidden>
+      <div class="title"><input type="text" name="title" placeholder="Title" id="titleField" class="edittitle"></div>
+      <div class="content"><textarea name="content" id="content" placeholder="Enter Content" class="editcontent"></textarea></div>
+      <div class="submit"><button type="submit" onclick="updateBlog()">Edit Blog</button></div>
+    </div>
+    <div class="showPad">
+      <div class="menu"><button onclick="closeShowPad()"><i class="fa fa-times"></i></button></div>
+      <input type="text" id="_id" hidden>
+      <div class="title"><input type="text" name="title" placeholder="Title" id="titleField" class="showtitle" readonly></div>
+      <div class="content"><textarea name="content" id="content" placeholder="Enter Content" class="showcontent" readonly></textarea></div>
+    </div>
+    
+    <div id="main">
+      <% blogs.forEach(blog=>{%>
+      <div class="blog" id=<%= blog._id %> onclick="showShowPad(this,event)">
+        <%=blog.title%>
+        <div>
+          <button id = <%= blog._id %> onclick="showeditePad(this)">
+            <i class="fas fa-edit edit" style="font-size: 1rem" ></i>
+          </button>
+            <button>
+              <i
+                id = <%= blog._id %>
+                class="fas fa-trash delete"
+                style="font-size: 1rem"
+                onclick="deleteBlog(this)"
+              ></i>
+            </button>
+        </div>
+      </div>
+      <%})%>
+    </div>
+  </body>
+  <script src="js/blogs.js"></script>
+  <script src="js/blogdarkmode.js"></script>
+  <script src="js/myBlogs.js"></script>
+</html>

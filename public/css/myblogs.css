@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "button";
+  src: url(fonts/FredokaOne-Regular.ttf);
+}
+* {
+  font-family: "button";
+}
+.blog {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 3rem 3rem;
+  height: 10vh;
+  width: 90vw;
+  border: 1px solid rgb(54, 51, 51);
+  color: white;
+}
+.blog button {
+  padding: 0.3rem 0.5rem;
+  border: none;
+  background: transparent;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+.writePad,.editPad,.showPad {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(15, 15, 15);
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  top: 0;
+}
+.showPad{
+  margin-top: -100vh;
+}
+.editPad{
+  margin: -100vw;
+}
+.menu {
+  width: 100vw;
+  height: auto;
+  padding-top: 2vh;
+  padding-left: 95vw;
+
+}
+.menu button{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.menu button:hover{
+  color: red;
+}
+.submit{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submit button{
+  padding: 0.5rem;
+  width: 10vw;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  background: rgb(55, 43, 226);
+  color: white;
+  cursor: pointer;
+}
+.writePad{
+  margin:100vw;
+  transition: all 0.5s ease-in-out;
+}
+.title {
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title #titleField {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: rgb(9, 10, 10);
+  outline: none;
+  border: none;
+  color: aliceblue;
+
+  border-bottom: 1px solid rgb(54, 51, 51);
+  background-color: transparent;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+.title #titleField:hover {
+  border-bottom: 1px solid rgb(92, 0, 212);
+}
+.content {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content #content {
+  width: 95%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  border-radius: 1rem;
+  border: 1px solid rgb(54, 51, 51);
+  height: 70vh;
+  padding: 1rem;
+}

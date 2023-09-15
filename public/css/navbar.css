@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'button';
+    src: url(fonts/FredokaOne-Regular.ttf);
+}
+body{
+    overflow: hidden;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+nav{
+    height: 10vh;
+    border-bottom: 0.1vh solid rgb(20, 2, 40);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+}
+.logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: 'button';
+    font-size: 3vh;
+    margin-right: 5vh;
+}
+.logo img{
+    height: 12vh;
+    
+}
+ul{
+    width: 100vh;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+ul li.this {
+    border-bottom: 0.2vh solid rgb(80, 0, 172);
+    }
+ul li.this a{
+    color: rgb(80, 0, 172);
+}
+ul li {
+    list-style: none;
+    height: 10vh;
+    width: 20vh;
+    color:white;
+    cursor: pointer;
+    font-family: 'button';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+li a:hover{
+    color: rgb(68, 241, 218);
+}
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

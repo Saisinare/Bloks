@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'button';
+    src: url(fonts/FredokaOne-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+nav{
+    position: sticky;
+    height: 10vh;
+    border-bottom: 0.1vh solid rgb(20, 2, 40);
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: 'button';
+    font-size: 3vh;
+    margin-right: 5vh;
+    cursor: default;
+}
+.logo img{
+    height: 12vh;
+    
+}
+ul{
+    width: 100vh;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+ul li.this{
+    border-bottom: 0.2vh solid white;
+    }
+ul li {
+    list-style: none;
+    height: 10vh;
+    width: 20vh;
+    color:white;
+    cursor: pointer;
+    font-family: 'button';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(10, 0, 23),rgb(0, 0, 16));
+    padding: 5vh;
+    color: white;
+    font-family:'button';
+    background-color: mediumaquamarine;
+}
+#block-image {
+    height: 40vh;
+}
+.text{
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    width: 150vh;
+    text-align: center;
+    margin-top: -10vh;
+}
+h1{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vh;
+}
+.detail{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh;
+    margin-top: -15vh;
+}
+#submit{
+    margin-top: -6vh;
+    height: 7vh;
+    width: 30vh;
+    border-radius: 5vh;
+    border: none;
+    background-color: rgb(75, 14, 241);
+    color:white;
+    cursor: pointer;
+    font-family: 'button';
+}
+#submit a{
+    text-decoration: none;
+    color: black;
+    font-size: 3vh;
+}
+#log_in{
+    height: 7vh;
+    width: 20vh;
+    border-radius: 5vh;
+    border: none;
+    background-color: rgb(75, 14, 241);
+    color:white;
+    cursor: pointer;
+    font-family: 'button';
+    transform: translateX(40vh);
+}
+#log_in a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vh;
+}

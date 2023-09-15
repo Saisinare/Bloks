@@ -1,0 +1,212 @@
+#main{
+    min-height: 89vh;
+}
+nav{
+    top: 0;
+    width: 100%;
+    background-color: black;
+}
+body{
+    background-color: white;
+}
+button#add{
+    position: fixed;
+    transform: translateX(180vh);
+    background-color: blueviolet;
+    border: none;
+    border-radius: 25vh;
+    height: 8vh;
+    width: 10vh;
+    z-index: 10;
+    margin-top: 75vh;
+    color: black;
+    font-size: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#add:hover{
+    width: 25vh;
+    transform: translateX(165vh);
+
+}
+#add_text{
+    display: none;
+    margin-left: 1vh;
+    font-size: 3vh;
+    font-family: 'button';
+}
+#add img{
+    height: 3vh;
+}
+#main{
+  min-height: 40vh;
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 2vh;
+    padding: 2vh;
+}
+.blog{
+   height: 30vh;
+    width: 190vh;
+    background-color: black;
+    color: white;
+    border-radius: 1vh;
+    overflow: hidden;
+    font-family: 'button';
+    cursor: pointer;
+    border-left: 1vh solid rgb(143, 2, 244);
+    border-right: 1vh solid rgb(143, 2, 244);
+
+}
+.blog:hover{
+    background-color: rgb(17, 17, 17);
+}
+.write_blog{
+
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 200vh;
+    flex-direction: column;
+    border-radius: 1vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248, 232, 232) ;
+    top: 0;
+    z-index: 9;
+
+
+}
+h2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-family: 'button';
+    color: rgb(0, 0, 0);
+}
+.title{
+    border: none;
+    outline: none;
+    background-color: rgb(255, 234, 234) ;
+    border-bottom: 0.1vh solid rgb(148, 0, 253);
+    color: rgb(0, 0, 0);
+    height: 6vh;
+    width: 50vh;
+    text-align: center;
+    font-size: 3vh;
+    font-family: 'button';
+}
+#write_content{
+    min-height: 80vh;
+    min-width: 198vh;
+    outline: none;
+    border: none;
+    background-color: rgb(240, 221, 221);
+    color: rgb(0, 0, 0);
+    padding: 5vh;
+    font-family: 'button';
+}
+.blog_title{
+    height: 30vh;
+    width: 195vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 5vh;
+    padding-left: 2vh;
+
+}
+.blog_content{
+    display: flex;
+}
+.exit{
+    font-size: 7vh;
+    width: 7vh;
+    color: rgb(0, 0, 0);
+    transform: translateX(183vh);
+    margin-top: -33vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius:2vh ;
+    z-index: 110;
+}
+.exit:hover{
+    background:  rgb(148, 0, 253);
+}
+.read_blog{
+    height: 99vh;
+    width: 201vh;
+    background-color: rgb(255, 238, 238);
+    position: fixed;
+    top: 0;
+display: none;
+flex-direction: column;
+color: rgb(0, 0, 0);
+font-family: 'button';
+}
+.read_title{
+    min-height: 20vh;
+    padding-top: 10vh;
+    /* background-color: rgb(251, 232, 232); */
+    width: 179vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 10vh;
+    font-family: 'button';
+    text-align: center;
+margin-bottom: 8vh;
+padding-right: 15vh;
+}
+.read_content{
+    width: 195vh;
+   min-height: 76vh;
+   background-color: rgb(255, 243, 243);
+   color: rgb(0, 0, 0);
+    overflow-y: scroll;
+    padding: 2vh;
+}
+.cancle{
+    height: 10vh;
+    width: 10vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 7vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(191vh);
+    cursor: pointer;
+    border-bottom-left-radius: 2vh;
+}
+.cancle:hover{
+    background-color: blueviolet;
+}
+#trash{
+    position: fixed;
+    transform: translateX(180vh);
+    margin-top: 80vh;
+    height: 10vh;
+    cursor: default;
+    background-color: rgb(30, 30, 30);
+    border-radius: 2vh;
+
+}
+#trash:hover{
+    background-color: rgb(148, 0, 253);
+}
+#mode{
+    height: 7vh;
+    border-radius: 40%;
+    float: inline-end;
+    transform: translateX(50vh);
+}
+#mode:hover{
+    background-color: rgb(42, 43, 43);
+    /* border-bottom: 0.1vh solid blueviolet; */
+}

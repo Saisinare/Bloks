@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Sign Up</title>
+</head>
+<link rel="stylesheet" href="css/signin_login.css">
+<link rel="shortcut icon" href="img/blocklogo.png" type="image/x-icon">
+<body>
+<div class="page">
+    <button id="home"><a href="/">Home</a> </button>
+    <button id="sign_in"><a href="/login">Log In</a> </button>
+    <form action="/signup" method="post" enctype="application/x-www-form-urlencoded" onsubmit="return validateSignup(this)">
+    <div class="container">
+        <div class="user">
+            <i><img src="img/verified-user.png" alt="Uername"></i>
+            <input type="text" placeholder="Username" name="username" id="username" value="username">
+        </div>
+        <div class="email">
+            <i><img src="img/email.png" alt="Email_ID"></i>
+            <input type="email" placeholder="for Eg. xyz@gmail.com" name="email" id="email" onkeypress="validateEmail(this)">
+            <p style="color: brown; display: none;" id="warn">enter valid email</p>
+        </div>
+        <div class="password">
+            <i><img src="img/padlock.png" alt="Password"></i>
+            <input type="password" placeholder="password" id="password" name="password"><img src="img/show_eye.png" alt="" 
+                id="show_hide">
+        </div>
+        <div class="submit">
+            <button id="submit" type="submit">
+               Sign Up
+        </div>
+    </div>
+</form>
+    <div class="circle"></div>
+    <div class="circle2"></div>
+
+</div>
+</body>
+
+<script src="js/validation.js"></script>
+
+</html>
