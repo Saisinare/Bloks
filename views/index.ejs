@@ -9,17 +9,29 @@
 <link rel="shortcut icon" href="img/blocklogo.png" type="image/x-icon">
 <link rel="stylesheet" href="css/index.css">
 <link rel="stylesheet" href="css/navbar.css">
+<script>
+    function logout(){
+        document.cookie = 'token' + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+        window.location.href = 'http://localhost:8000/'
+    }
+</script>
 <body>
     <nav>
         <div class="logo">
             <img src="img/logo.png" alt="">Blocks
         </div>
+        <div class="logSection">
         <ul>
             <li class="this"><a href="/">Home</a></li>
             <li><a href="/blogs">Blogs</a></li>
             <li><a href="/myblogs">My Blogs</a></li>
         </ul>
-        <button id="log_in"><a href="/login"> Log In</a></button>
+        <% if (!isLogin){%>
+        <button class="log_in"><a href="/login"> Log In</a></button>
+        <%}else{%>
+            <button class="log_in" onclick="logout()">Log Out</button>
+            <%}%>
+    </div>
     </nav>
     <header>
         <img src="img/logo.png" alt="" id="block-image">
@@ -31,4 +43,5 @@
         <button id="submit"><a href="/signup"> Create Account</a></button>
     </header>
 </body>
+
 </html>

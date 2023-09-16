@@ -13,7 +13,8 @@ app.use(express.json())
 app.use(routes)
 app.use(blogRoutes)
 app.get('/',(req,res)=>{
-    res.render('index')
+    const isLogin = (req.cookies.token)?true:false
+    res.render('index',{isLogin:isLogin})
 })
 
 app.listen(8000,()=>{

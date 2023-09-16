@@ -2,10 +2,10 @@
     font-family: 'button';
     src: url(fonts/FredokaOne-Regular.ttf);
 }
-
 *{
     margin: 0;
     padding: 0;
+
 }
 body{
     background-color: black;
@@ -56,6 +56,7 @@ ul li {
 ul li a{
     text-decoration: none;
     color: white;
+    font-size: 2.3vh;
 }
 header{
     height: 100vh;
@@ -110,19 +111,24 @@ h1{
     color: black;
     font-size: 3vh;
 }
-#log_in{
-    height: 7vh;
+.log_in{
+    height: 6vh;
     width: 20vh;
     border-radius: 5vh;
     border: none;
-    background-color: rgb(75, 14, 241);
+    background: linear-gradient(135deg,rgb(195, 0, 255),rgb(30, 0, 255));
     color:white;
     cursor: pointer;
     font-family: 'button';
-    transform: translateX(40vh);
 }
-#log_in a{
+.log_in a{
     text-decoration: none;
     color: white;
-    font-size: 2.5vh;
+    font-size: 2vh;
+}
+.logSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
 }
